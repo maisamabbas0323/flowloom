@@ -1,0 +1,47 @@
+{
+  "name": "flowloom",
+  "productName": "Flowloom",
+  "version": "0.1.0",
+  "description": "Connect it once. Let it run.",
+  "main": "out/main/index.js",
+  "author": "Flowloom",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "lint": "eslint src",
+    "test": "vitest run",
+    "smoke": "node scripts/smoke.mjs",
+    "live:check": "node scripts/live-check.mjs",
+    "live:browser": "FLOWLOOM_LIVE_BROWSER=1 npx vitest run tests/live/browserLive.test.ts",
+    "live:voice": "FLOWLOOM_LIVE_VOICE=1 npx vitest run tests/live/voiceLive.test.ts",
+    "live:paper": "FLOWLOOM_LIVE_PAPER=1 npx vitest run tests/live/paperLive.test.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "electron": "^45.0.0",
+    "electron-vite": "^6.0.0",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^5.0.5"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.12.0",
+    "dotenv": "^18.0.8",
+    "lucide-react": "^1.61.0",
+    "playwright-core": "^1.64.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  }
+}

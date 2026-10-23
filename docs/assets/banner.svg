@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Flowloom — connect it once, let it run. Desktop workflow automation with a visual editor and a real execution engine.">
+  <title>Flowloom — Connect it once. Let it run.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#131418"/>
+      <stop offset="1" stop-color="#1d1f27"/>
+    </linearGradient>
+    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5c66e0"/>
+      <stop offset="0.62" stop-color="#35c2d4"/>
+      <stop offset="1" stop-color="#e0a13f"/>
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.1" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Connected-nodes motif: the woven thread, opened up into a workflow. -->
+  <g fill="none" stroke="url(#thread)" stroke-width="2.5" stroke-linecap="round" opacity="0.85">
+    <path d="M842 172 C 918 172 936 252 1006 252"/>
+    <path d="M842 172 C 932 172 940 378 1032 378"/>
+    <path d="M1006 252 C 1082 252 1074 176 1128 176"/>
+    <path d="M1032 378 C 1096 378 1088 452 1136 452"/>
+  </g>
+  <g>
+    <circle cx="842" cy="172" r="13" fill="#1d1f27" stroke="#8f97f0" stroke-width="3"/>
+    <circle cx="1006" cy="252" r="13" fill="#1d1f27" stroke="#35c2d4" stroke-width="3"/>
+    <circle cx="1032" cy="378" r="13" fill="#1d1f27" stroke="#5c66e0" stroke-width="3"/>
+    <circle cx="1128" cy="176" r="9" fill="#1d1f27" stroke="#e0a13f" stroke-width="3"/>
+    <circle cx="1136" cy="452" r="9" fill="#1d1f27" stroke="#35c2d4" stroke-width="3"/>
+  </g>
+
+  <!-- The app's woven-thread monogram -->
+  <g transform="translate(96 214)">
+    <rect x="1" y="1" width="94" height="94" rx="23" fill="#212227" stroke="#33353d" stroke-width="2"/>
+    <g transform="translate(12 12) scale(4.5)" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round">
+      <path d="M3 3.5h10M3 8h7"/>
+      <path d="M13 8c0 3-2.2 4.5-4.4 4.5C6 12.5 3.6 11.2 3 9.4"/>
+    </g>
+  </g>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <text x="216" y="292" font-size="62" font-weight="700" fill="#f4f4f6" letter-spacing="-1">Flowloom</text>
+    <text x="219" y="340" font-size="29" font-weight="500" fill="#9aa1f5">Connect it once. Let it run.</text>
+    <text x="97" y="466" font-size="20" fill="#9a9ba3">Desktop workflow automation — visual editor, real execution engine, honest failures.</text>
+    <text x="97" y="502" font-size="17" fill="#6f707a">Electron · React · TypeScript · Tailwind CSS · vitest</text>
+  </g>
+</svg>

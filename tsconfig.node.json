@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": false,
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": ["src/main/**/*", "src/preload/**/*", "src/shared/**/*", "tests/main/**/*", "scripts/**/*", "electron.vite.config.ts", "vitest.config.ts"],
+  "exclude": ["node_modules", "out", "dist"]
+}
