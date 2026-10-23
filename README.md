@@ -112,11 +112,11 @@ The renderer never executes a step itself. When you press **Run**:
 
 ```mermaid
 flowchart LR
-    A[Trigger<br/>manual start] --> B[Data / text<br/>&#123;&#123;stepId&#125;&#125; templates]
-    B --> C{Condition<br/>contains …}
-    C -->|Matches| D[Delay<br/>real wait]
-    C -->|Otherwise| E[Browser action<br/>navigate · extract · screenshot]
-    D --> F[Join<br/>all / any]
+    A["Trigger<br/>manual start"] --> B["Data / text<br/>template value"]
+    B --> C{"Condition<br/>contains …"}
+    C -->|Matches| D["Delay<br/>real wait"]
+    C -->|Otherwise| E["Browser action<br/>navigate · extract · screenshot"]
+    D --> F["Join<br/>all / any"]
     E --> F
 ```
 
